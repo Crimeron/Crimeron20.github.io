@@ -92,9 +92,6 @@ span{
 button:hover span{
     width: 100%;
 }
-button:hover{
-    border: none;
-}
 .logo2{
     width: 200px;
     height: 200px;
