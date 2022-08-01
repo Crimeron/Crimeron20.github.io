@@ -21,7 +21,7 @@ body{
 }
 .navber{
     
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 32px 0;
     align-items: center;
@@ -32,17 +32,16 @@ body{
 .navber ul li{
     
     display: inline-block;
-    margin: 0 25px;
-    position: relative; 
+    margin: 0 0;
+    position: relative;
 }
 .navber ul{
-    margin-left: 1000px;
+    margin-left: 10%;
 }
 .navber ul li a{
     color: #5534A5;
     text-decoration: none;
     font-size: 20px;
-    width: 200px;
     padding: 15px 15px;
     margin: 20px 10px;
     border-radius: 25px;
@@ -101,5 +100,5 @@ button:hover{
     height: 200px;
     display: block; margin: auto;
     
-    margin-top: 50px;
+    margin-top: 3%;
 }
