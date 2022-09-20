@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa-solid fa-eye fa-1x"></i> CrimeronNFT </a>
+
+        <nav class="navbar" id="navLinks">
+            <i class="fas fa-regular fa-xmark" id="carpi" onclick="hideMenu()"></i>
+            <a href="index.html">HOME</a>
+            <a href="nfts.html">NFTs</a>
+            <a href="merch.html">MERCH</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <i class="fas fa-regular fa-bars"onclick="showMenu()"></i>
+    </header>
+    <!--- Resim-->
+    <section class="home" id="home">
+        <div class="slides-container">
+    
+            <div class="slide active">
+                <div class="content">
+                    <div class="slideimg">
+                    </div>
+                    <div class="textbox">
+                        <h3>Welcome to Bipo World! Bipo will always save you from gray days. Give your love to Bipo and they will love you back.</h3>
+                        <div class="collection">
+                            <p>Collection Button</p>
+                            <a href="https://opensea.io/collection/bipo-world"><i class="fa fa fa-solid fa-water"></i></a> 
+                        </div>
+                        
+                    </div>
+                    
+                        
+                </div>
+                <div class="img">
+                    <img src="imgs/nija turtles.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="content">
+                    <div class="slideimg">
+                        
+                    </div>
+                    <div class="textbox">
+                        <h3> This Collection will have only 5 member. Fluffies live under beds. They sleep during the day and wake up at 12pm. They usually feed on the crumbs left over from your snacks in bed. Don't try to piss them off. They're not cute when they're angry.</h3>
+                        <p>Collection Button</p>
+                        <a href="https://opensea.io/collection/fluffies-family"><i class="fa fa-solid fa-water fa-4x"></i></a>
+                    </div>
+                     
+                </div>
+                <div class="img">
+                    <img src="imgs/fam.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="slideimg">
+                        
+                    </div>
+                    <div class="textbox">
+                        <h3> They resemble kids who are given two significant yet diametrically opposed tasks.<br/> The first is becoming accustomed to the environment in which they now exist.<br/> The second is to express their uniqueness, which is something that comes naturally to them.<br/> They behave and live in line with these responsibilities: they attempt to respect their owners (parents), they try new and exciting things because they need to explore the world that is shown to them and choose where they belong.</h3>
+                        <p>Collection Button</p>
+                        <a href="https://opensea.io/collection/baby-bipsies"><i class="fa fa-solid fa-water fa-4x"></i></a> 
+                    </div>
+                    
+                </div>
+                <div class="img">
+                    <img src="imgs/babybipsies.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="slideimg">
+                        
+                    </div>
+                    <div class="textbox">
+                        <h3> This collection consists of 999 ai generated Buppies. Buppies are sweet creatures who are always ready to listen, support and give love. They are like the most faithful friends.</h3>
+                        <p>Collection Button</p>
+                        <a href="https://opensea.io/collection/the-buppies"><i class="fa fa-solid fa-water fa-4x"></i></a> 
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="imgs/Bupp.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="next-slide"class="fa-solid fa-arrow-right" onclick="next()"></div>
+        <div id="prev-slide"class="fa-solid fa-arrow-left" onclick="prev()"></div>
+    </section>
+    <!---Script-->
+    <script>
+        let slides = document.querySelectorAll('.home .slides-container .slide');
+    let index = 0;
+    </script>
+    <script>
+        function next(){
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+        
+    }
+
+    function prev(){
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+        <!--About-->
+        
+        <!--Contact buttn-->
+        <section class="cta">
+            <h1>If you want to talk with us</h1>
+            <a href="contact.html">CONTACT US</a>
+        </section>
+        <!--Footer-->
+        <section class="footer">
+            <h4>Information</h4>
+            <p>This site is a temporary nft site</p>
+            <p><section class="credit">created by <span>Crimeron</span> >> all rights reserved</section></p>
+        </section>
+</body>
+
+</html>
