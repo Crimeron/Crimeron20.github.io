@@ -103,7 +103,13 @@ section{
 .home .slides-container .slide .content{
     flex: 1 1 40rem;
 }
-
+.content h1{
+    font-size: 40px;
+    margin-left: 34%;
+    margin-bottom: 10%;
+    position: relative;
+    color: #B983FF;
+}
 
 .home .slides-container .slide .content h3{
     color: white;
@@ -200,6 +206,13 @@ section{
         text-align: left;
         z-index: 2;
         transition: 1s;
+    }
+    .content h1{
+        font-size: 40px;
+        margin-left: 30%;
+        margin-bottom: 10%;
+        position: relative;
+        color: #B983FF;
     }
     .fa{
         font-size: 50px;
