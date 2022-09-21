@@ -80,7 +80,16 @@ section{
       padding: 10px;
       border-radius: 2rem;
   }
-  
+  .infos .fai{
+    font-size: 80px;
+    padding: 30px;
+    min-width: 144px;
+    border: solid 2px #1f003b;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    transition-timing-function: linear;
+  }
   .header .navbar a:hover{
       color: #94B3FD;
       transition: 0.5s ease-out;
@@ -99,6 +108,11 @@ section{
         font-size: 40px;
         cursor: pointer;
         background-color: #B983FF;
+    }
+    .infos .fai{
+      font-size: 60px;
+      margin-right: 0px;
+      display: table-cell;
     }
     #carpi{
         color: #B983FF;
@@ -255,16 +269,7 @@ section{
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .infos .fai{
-    font-size: 80px;
-    padding: 30px;
-    min-width: 144px;
-    border: solid 2px #1f003b;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 50px;
-    transition-timing-function: linear;
-  }
+  
   .infos .fai:hover{
     color: white;
     background-color: #B983FF;
