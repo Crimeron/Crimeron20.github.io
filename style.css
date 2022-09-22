@@ -234,7 +234,9 @@ section{
     .header .navbar a{
         display: block;
     }
-
+    .textbox h3{
+        font-size: 18px;
+    }
 }
 .navbar a::after{
     content: '';
