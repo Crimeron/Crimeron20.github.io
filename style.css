@@ -240,6 +240,9 @@ section{
     #Baby h3{
         font-size:30px;
     }
+    .home .slides-container .slide .content h3{
+        font-size:20px;
+    }
 }
 .navbar a::after{
     content: '';
