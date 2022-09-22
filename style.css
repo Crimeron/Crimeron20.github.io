@@ -237,6 +237,9 @@ section{
     .textbox h3{
         font-size: 18px;
     }
+    #Baby{
+        font-size:30px;
+    }
 }
 .navbar a::after{
     content: '';
